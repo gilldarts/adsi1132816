@@ -1,0 +1,103 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title estructura (semantica)
+    style(rel='stylesheet').
+      body {
+        background-color: blue;
+        color: white;
+        font: 16px Tahoma;
+      }
+      main {
+        background-color: rgba(0,0,0, 0.5);
+        margin: 0px auto;
+        padding: 20px;
+        width: 800px;
+      }
+      header figure{
+        text-align: center;
+      }
+      nav li {
+        background-color: green;
+        color: white;
+        display: inline-block;
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+        width: 126px;
+        transition: all 0.1s ease-in;
+      }
+      nav li:hover, 
+      nav li:hover a{
+        background-color: white;
+        color: crimson;
+      }
+      nav li a {
+        color: white;
+        display: block;
+        height: 100%;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 100%;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 36px;
+        letter-spacing: 2px;
+      }
+      article, aside {
+        display: inline-block;
+        line-height: 24px;
+        vertical-align: top;
+        text-align: justify;
+      }
+      article {
+        width: 500px;
+      }
+      aside {
+        width: 290px;
+      }
+      footer p {
+        text-align: center;
+      }
+  body
+    main
+      header
+        figure
+          img(src='http://gruporivas.com.mx/wp-content/uploads/2016/05/watch-walking-dead-season-6-860x450.jpg', width='700')
+          nav
+            li: a(hrerf='') inicio
+            li: a(hrerf='') historia
+            li: a(hrerf='') personajes
+            li: a(hrerf='') enemigos
+      section
+        article  
+          figure
+          img(src='http://www.notiminuto.com/site/assets/files/94645/parquewalkingdead.jpg', width='500px' height='600')
+          p 
+        aside
+          article  
+          h1 historia
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, provident, voluptatem. Rerum similique sit nulla tempore quisquam molestias ipsam repellendus reprehenderit eaque, aut aliquid deserunt dolorem autem non, explicabo, nam fugit? Incidunt modi dolore, deleniti cum minima expedita placeat aliquam earum laboriosam. Repellendus, ducimus dolorem! Sequi, ullam. Quos labore autem ad cumque cum laborum sequi, doloribus dolores optio minima voluptatem dolore eius temporibus perspiciatis saepe architecto deserunt et placeat vel, ipsum, iure quisquam vero eligendi corporis corrupti. Nam provident, ipsa dolore soluta repellat possimus quisquam asperiores, consectetur voluptatem voluptas quia eligendi libero consequatur et nesciunt laborum unde voluptatum, voluptates saepe!
+      
+        aside
+          article  
+            h1 personajes
+              figure
+                img(src='http://empireonline.media/jpg/80/0/0/1000/563/0/north/0/0/0/0/0/t/tv/1402/images/zYFQM9G5j9cRsMNMuZAX64nmUMf.jpg', width='600')
+                p  
+                br
+        aside
+          article  
+            h1 enemigos
+              figure
+                img(src='http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/article_main_wide_image/public/the-walking-dead-negan-jeffrey-dean-morgan-last-day-on-earth.jpg?itok=Q9rxO8rj')
+             figure
+               img(src='')
+              
+        footer
+          p  todos los derechos reservados
+        

@@ -1,0 +1,33 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title atributos (formulario)
+  body
+    h1 atributos de entrada (formulario)
+    hr
+    form(method='post')
+      label(for='correo') autocompleta:
+      input(type='email', id='correo1' placeholder='correo electronico')
+      br
+      label(for='correo') no autocompleta:
+      input(type='email', id='correo2' autocomplete='off')
+      br
+      label(for='enfocar') enfocar:
+      input(type='text', id='enfocar', autofocus)
+      br
+      label(for='validar1') validar:
+      input(type='text', id='validar1', required)
+      br
+      label(for='validar2') no validar:
+      input(type='text', id='validar2', requerid formnovalidate)
+      br
+      label(for='validar2') alto y ancho:
+      input(type='number', id='medida', width='400px' height='100px')
+      br
+      label(for='medida') minimo / maximo / pasos:
+      input(type='range', id='rango' min='0' max='500' step='50', oninput='salida.value=this.value')
+      output(id='salida')
+      br
+      input(type='submit', value='enviar', formaction='destino1.php')
+      input(type='submit', value='enviar', formethod='get')

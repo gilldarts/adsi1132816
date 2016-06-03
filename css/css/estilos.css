@@ -1,0 +1,13 @@
+section {
+  background-color: #008000;
+  color: #fff;
+  padding: 20px;
+  margin: 0px auto;
+  width: 400px;
+}
+h1 {
+  color: #f00;
+}
+li {
+  font-family: castellar;
+}

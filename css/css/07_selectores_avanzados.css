@@ -1,0 +1,14 @@
+/* selectores hijos */
+article > p {
+  color: #008000;
+  font-family: arial;
+}
+/* selectores adyacentes */
+a + p {
+  color: #800080;
+}
+/* selector de atributo */
+a[class] {
+  color: #f00;
+  text-decoration: overline;
+}
