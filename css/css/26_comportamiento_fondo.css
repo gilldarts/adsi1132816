@@ -1,0 +1,12 @@
+body {
+  background: #000 url("../imgs/laxus.jpg") no-repeat center center fixed;
+  font: 16px arial;
+  line-height: 30px;
+  padding: 50px;
+  color: #fff;
+  text-align: justify;
+}
+p {
+  background-color: rgba(0,0,0,0.6);
+  padding: 40px;
+}

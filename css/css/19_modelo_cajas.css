@@ -1,0 +1,25 @@
+body .margin {
+  background-color: #000;
+  color: #0f0;
+  padding: 5em;
+  height: 30em;
+  width: 50em;
+}
+body .border {
+  background-color: #008000;
+  color: #800080;
+  padding: 4em;
+  height: 20em;
+}
+body .padding {
+  background-color: #f00;
+  color: #0ff;
+  padding: 3em;
+  height: 15em;
+}
+body .content {
+  background-color: #fff;
+  color: #fff;
+  padding: 2em;
+  height: 10em;
+}
