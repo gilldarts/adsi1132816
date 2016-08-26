@@ -1,0 +1,75 @@
+section.animacion {
+  animation: 0.5ms animanimacion infinite;
+}
+div.forma {
+  height: 200px;
+  width: 200px;
+  background-color: #0ff;
+  border-radius: 50%;
+  margin: 200px auto;
+  animation: 0.5s animforma infinite ease-in-out alternate;
+}
+@-moz-keyframes animanimacion {
+  from {
+    transform: translatex(0px);
+  }
+  to {
+    transform: translatex(20px);
+  }
+}
+@-webkit-keyframes animanimacion {
+  from {
+    transform: translatex(0px);
+  }
+  to {
+    transform: translatex(20px);
+  }
+}
+@-o-keyframes animanimacion {
+  from {
+    transform: translatex(0px);
+  }
+  to {
+    transform: translatex(20px);
+  }
+}
+@keyframes animanimacion {
+  from {
+    transform: translatex(0px);
+  }
+  to {
+    transform: translatex(20px);
+  }
+}
+@-moz-keyframes animforma {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-160px);
+  }
+}
+@-webkit-keyframes animforma {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-160px);
+  }
+}
+@-o-keyframes animforma {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-160px);
+  }
+}
+@keyframes animforma {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-160px);
+  }
+}

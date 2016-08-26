@@ -1,0 +1,27 @@
+section {
+  margin: 20px auto;
+  height: 580px;
+  width: 400px;
+  background: url("../imgs/dragon_ra.png");
+}
+section.trans1 {
+  transition: all 1s;
+}
+section.trans1:hover {
+  -webkit-transform: rotatey(180deg);
+  transform: rotatey(180deg);
+}
+section.trans2 {
+  transition: all 0.5s ease-in;
+}
+section.trans2:hover {
+  -webkit-transform: rotate(180deg) scale(0.1);
+  transform: rotate(180deg) scale(0.1);
+}
+section.trans3 {
+  transition: all 2s ease-in-out;
+}
+section.trans3:hover {
+  -webkit-transform: scale(1.2) skew(20deg) d;
+  transform: scale(1.2) skew(20deg);
+}

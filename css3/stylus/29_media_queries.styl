@@ -1,0 +1,44 @@
+*
+	transition all 0.5s
+body
+	font 16px arial
+	background-color gray
+	color #444
+article 
+	background-color #ddd
+	margin 20px auto
+	width 80%
+	text-align justify
+	padding 2em
+	line-height 1.6em
+	
+	h1
+		font-size 3em
+	h1 h2 
+		color #333
+	
+	h2
+		font-style italic
+		display none
+@media (max-width: 1380px)
+	h2.res 
+		display none
+	h2.res1
+		display block
+	
+@media (max-width: 768px)
+	h2.res 
+		display none
+	h2.res2
+		display block
+	article 
+		background-color blue
+		color white
+@media (max-width: 500px)
+	h2.res 
+		display none
+	h2.res3
+		display block
+	article 
+		background-color green
+		color white

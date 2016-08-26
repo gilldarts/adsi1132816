@@ -1,0 +1,12 @@
+p {
+  border: 4px solid #f00;
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  padding: 4px;
+  margin-left: 100px;
+  font: 1.5em algerian;
+}
+p.parr2 {
+  word-wrap: break-word;
+}

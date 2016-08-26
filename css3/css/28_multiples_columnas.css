@@ -1,0 +1,10 @@
+body {
+  font: 16px arial;
+  color: #777;
+}
+article p {
+  column-count: 4;
+  column-gap: 20px;
+  column-rule: 4px outset #00f;
+  text-align: justify;
+}
