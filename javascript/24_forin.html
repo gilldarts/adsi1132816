@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ciclo</title>
+</head>
+<body>
+	<h1>ciclo for</h1>
+	<ul id="lista"></ul>
+	<script>
+		var lista=document.getElementById('lista');
+		var bicis=['santa cruz', 'yeti', 'intense','rocky mountain', 'specialized','trek', 'giant', 'devinci','scott'];
+		
+		var mibici={
+			marca:'santa cruz',
+			modelo:2017,
+			color: 'negra mate',
+			rueda: '29 pulgadas',
+			tipo: 'rigida'
+		};
+		for(var bici in bicis){
+			lista.innerHTML+="<li>"+bicis[bici]+"</li>";
+		}
+		for(var mb in mibici){
+			milista.innerHTML+="<li>"+mb+': '+mibici[mb]+"</li>";
+		}
+	</script>
+</body>
+</html>

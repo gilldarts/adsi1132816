@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>piedra, papel, tijera</title>
+	<link rel="stylesheet" href="css/archivo.css">
+</head>
+<body>
+	
+	<section>
+		<h1>Piedra, Papel, Tijera</h1>
+
+		<div class="izquierda">
+			<button type="button" id="reglas">Reglas</button>
+			<div class="custom-select">
+				<label for="opcionUsuario" id="label" class="label">Seleccione una opción</label>
+				<select name="opcionUsuario" id="opcionUsuario" class="select">
+					<option value="0">Piedra</option>
+					<option value="1">Papel</option>
+					<option value="2">Tijera</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="derecha">
+			<div class="puntos">
+				<div>
+					<b>Usuario: &nbsp;</b><div id="usuario"> 0</div>
+				</div>
+				<div>
+					<b>Máquina: &nbsp;</b><div id="maquina"> 0</div>
+				</div>
+				<div>
+					<b>Empates: &nbsp;</b><div id="empate"> 0</div>
+				</div>
+			</div>
+			<div id="resultado"></div>
+		</div>
+	</section>
+	
+<script src="js/archivo.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>metodos vectores</title>
+</head>
+<body>
+	<h1>metodos vectores</h1>
+	<hr>
+	<ul id="vector"></ul>
+
+	<script>
+		var vector=document.getElementById('vector');
+		var lprog=new Array('php', 'ruby','c sharp', 'javascript', 'python');
+
+		vector.innerHTML="<li> valores del arreglo: "+lprog.valueOf()+"</li>";
+		vector.innerHTML+="<li> arrelgo a cadena: "+lprog.toString()+"</li>";
+		vector.innerHTML+="<li> unir los valores con /: "+lprog.sort()+"</li>";
+		vector.innerHTML+="<li> unir los valores con /: "+lprog.reverse()+"</li>";
+
+		lprog.unshift('pascal')
+		vector.innerHTML+="<li>agregar inicio: "+lprog+"<li>"
+		lprog.push('java')
+		vector.innerHTML+="<li>agregar final: "+lprog+"<li>"
+
+		lprog.shift('pascal')
+		vector.innerHTML+="<li>eliminar inicio: "+lprog+"<li>"
+		lprog.pop('java')
+		vector.innerHTML+="<li>eliminar inicio: "+lprog+"<li>"
+	</script>
+</body>
+</html>

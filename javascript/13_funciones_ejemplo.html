@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: teal;
+			font: 16px Arial;
+		}
+		nav{
+			margin: 150px auto
+			width: 1180px;
+		}
+		nav ul.products{
+			list-style: none;
+			margin: 0px;
+			padding: 20px;
+		}
+		nav ul.products li{
+			border: 4px solid #005050;
+			border-radius: 10px;
+			background-color: #fff;
+			display: inline-block;
+			vertical-align: top;
+			padding: 10px;
+			height: 300px;
+			width: 300px;
+			overflow: hidden;
+		}
+		nav ul.prducts li:last-child{
+			margin-right: 0px;
+		}
+		nav ul.products li div figure.img{
+			height: 200px;
+			width: 200px;
+			margin: 30px auto;
+		}
+		nav ul.products li div figure.img1{
+			background: url(imgs/portatil1.jpg)no-repeat center center;
+			background-size: 100%;
+		}
+		nav ul.products li div figure.img2{
+			background: url(imgs/portatil2.jpg)no-repeat center center;
+			background-size: 100%;
+		}
+		nav ul.products li div figure.img3{
+			background: url(imgs/portatil3.jpg)no-repeat center center;
+			background-size: 100%;
+		}
+		nav ul.products li div button{
+			font:16px Arial;
+			padding: 10px;
+			margin:-20px auto 0px auto;
+			width: 140px;
+			-webkit-transition: 0.5s all ease-in;
+		}
+		nav ul.products li div button:hover{
+			cursor: pointer;
+			background-color: #006d6d;
+			-webkit-transform: scale(1.1);
+		}
+		.movedown{
+			-webkit-animation: 0.5s animovedown 1;
+		}
+		@-webkit-keyframes animovedown{
+			0%{
+				-webkit-transform: translate(0px, 0px);
+				opacity: 1;
+			}
+			100%{
+				-webkit-transform: translate(250px, 250px);
+				opacity: 0;
+			}
+		}
+		.hide{
+			display: none;
+		}
+		div.info{
+			border-radius: 10px;
+			background: -webkit-linear-gradient(top,#000,#777);
+			color white
+			height: 94%;
+			padding: 10px;
+		}
+		div.info h2{
+			margin:0px;
+			color: white;
+		}
+		div.info p{
+			text-align: justify;
+			line-height: 22px;
+		}
+		div.info span {
+			background-color: red;
+			border-radius: 20px;
+			height: 20px;
+			color: white;
+			display: block;
+			font-size: 1.4em;
+			text-align: center;
+			line-height: 22px;
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			width: 20px;
+		}
+		div.info span:hover{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="products">
+			<li id="pr1">
+				<div class="info">
+					<h2>yetei sbc 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium possimus totam dolorum aut facilis unde soluta porro velit nisi non ipsa molestias eaque, laudantium officia vitae deleniti voluptatum pariatur et, sunt dolor eveniet. Inventore, praesentium.</p>
+					<span> &times; </span>
+				</div>
+				<div class="state1">
+					<figure class="img img1"></figure>
+					<button id=btn1>ver+</button>
+				</div>
+			</li>
+			<li id="pr2">
+				<div class="info">
+					<h2>yetei sbc 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt, sapiente enim velit harum voluptatibus quae non numquam cum ipsam, adipisci nobis blanditiis repellat! Perspiciatis recusandae voluptatem ea perferendis. Culpa quasi dolor saepe earum quo, maiores enim delectus rem sapiente.</p>
+					<span> &times; </span>
+				</div>
+				<div class="state1">
+					<figure class="img img2"></figure>
+					<button id=btn1>ver+</button>
+				</div>
+			</li>
+			<li id="pr3">
+				<div class="info">
+					<h2>yetei sbc 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt, sapiente enim velit harum voluptatibus quae non numquam cum ipsam, adipisci nobis blanditiis repellat! Perspiciatis recusandae voluptatem ea perferendis. Culpa quasi dolor saepe earum quo, maiores enim delectus rem sapiente.</p>
+					<span> &times; </span>
+				</div>
+				<div class="state1">
+					<figure class="img img3"></figure>
+					<button id=btn1>ver+</button>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		var states=document.getElementByClassName('state1');
+		var btn1=document.getElementByClassName('btn1');
+		var btn2=document.getElementByClassName('btn2');
+		var btn3=document.getElementByClassName('btn3');
+
+		function toggleFx(inx) {
+			state[0].classList.add('movedown');
+			setTimeout(function(){states[inx].classList.remove('movedown');}, 1200);
+		}
+		btn1.onclick=function(){
+			toggleFx(0);
+		}
+		btn2.onclick=function(){
+			toggleFx(1);
+		}
+		btn3.onclick=function(){
+			toggleFx(2);
+		}
+	</script>
+</body>
+</html>

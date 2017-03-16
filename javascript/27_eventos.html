@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		figure#car{
+			height: 500px;
+			margin: 20px auto;
+			width: 800px;
+		}
+		figure#car.car1{
+			background:url(imgs/car1.jpg) no-repeat;
+		}
+		figure#car.car2{
+			background:url(imgs/car2.jpg) no-repeat;
+		}
+		figure#car.car3{
+			background:url(imgs/car3.jpg) no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<h1>eventos</h1>
+	<hr>
+	<select id="tcar">
+		<option value="1">car 1</option>
+		<option value="2">car 2</option>
+		<option value="3">car 3</option>
+	</select>
+	<figure class="car"></figure>
+
+	<script>
+		var tcar=document.getElementById('tcar');
+		var car=document.getElementById('car');
+		car.classList.add('car1');
+		tcar.onchange=function(){
+			car.className='';
+			if(this.value==1)
+				car.classList.add('car1');
+
+			if(this.value==2)
+				car.classList.add('car2');
+
+			if(this.value==3)
+				car.classList.add('car3');
+		}
+	</script>
+</body>
+</html>

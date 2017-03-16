@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>objetos vehiculo</title>
+	<link rel="stylesheet" href="css/09_vehiculo.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<ul id="info">
+		<li>INFORMACION</li>
+		<li id="mar"><span>Marca:</span>Volkswagen</li>
+		<li id="ref"><span>Referencia:</span>gallardo</li>
+		<li id="mod"><span>Modelo:</span>2013</li>
+		<li id="ima">Imagen:<img src="imgs/lambor.png"></li>
+		<li id="cil"><span>Cilindraje:</span>5000</li>
+		<li id="controls">CONTROLES</li>
+		<li>
+			<i id="ini" class="fa fa-play-circle fa-2x "></i>
+			<i id="det" class="fa fa-stop-circle fa-2x"></i>
+			<i id="ava" class="fa fa-chevron-circle-right fa-2x"></i>
+			<i id="fre" class="fa fa-pause-circle fa-2x"></i>
+			<i id="giz" class="fa fa-arrow-circle-left fa-2x"></i>
+			<i id="gde" class="fa fa-arrow-circle-right fa-2x"></i>
+		</li>
+	</ul>
+	<div id="vhcl">
+		<div>
+			<img src="imgs/lambor.png" width="240px">
+		</div>
+	</div>
+
+	<script src="js/vehiculo.js"></script>
+	<script>
+		vehiculo.info();
+		vehiculo.controles();
+	</script>
+
+</body>
+</html>

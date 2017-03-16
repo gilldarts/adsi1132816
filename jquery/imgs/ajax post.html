@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost/jquery/21_ajax_post.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>ajax post</title>
+	<style>
+		body{
+			background-position: center center;
+			background-size:400px;
+		}
+	</style>
+</head>
+<body style="background: url(&quot;imgs/TWD.jpg&quot;);">
+	<h1>ajax</h1>
+	<hr>
+	<select id="bgs">
+		<option>selecctione fondo de pantalla</option>
+		<option value="bg1">ft</option>
+		<option value="bg2">twd</option>
+		<option value="bg3">got</option>
+	</select>
+	<script async="" src="chrome-extension://obkfjhifkbhimlocpddgamonjihinpak/script/safebrowse.js"></script><script src="./ajax post_files/jquery-3.1.1.min.js.descarga"></script>
+	<script>
+		$(document).ready(function() {
+			$('#bgs').change(function(event) {
+				$bg= $(this).val();
+				if ($bg != '') {
+					$.post('fondos.php', {bg: $bg}, function(data, status, xhr) {
+						if (status=='success') {
+							$('body').css('background',data);
+						}
+					});
+				}else{
+					alert('por favor seleccione un fondo');
+				}
+			});
+		});
+	</script>
+
+</body></html>

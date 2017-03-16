@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>efectos</title>
+	<style>
+		body{
+			background-color: aqua;
+			font-family: sans-serif;
+		}
+		section{
+			margin: 10px;
+			display: inline-block;
+			background-color: #fff;
+			color: gray;
+			padding: 20px;
+			width: 300px;
+		}
+		section h2{
+			text-align: center
+		}
+		section button{
+			color: blue;
+			border: none;
+			display: block;
+			padding: 10px;
+			width: 100%;
+		}
+		section button:hover{
+			cursor: pointer;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>efectos jquery</h1>
+	<hr>
+	<section>
+		<h2>hide/show</h2>
+		<img src="imgs/game.jpg">
+		<button id="btn1">ocultar</button>
+		<button id="btntoggle1">toggle</button>
+	</section>
+	<section>
+		<h2>deslizar/slide</h2>
+		<img src="imgs/game.jpg">
+		<button id="btn2">deslizar abajo</button>
+		<button id="btntoggle2">toggleslide</button>
+	</section>
+	<script src="js/jquery-3.1.1.js"</script>
+	<script>
+		$(document).ready(function(){
+			$('body').on('clic', '#btn1', function(event){
+				event.preventDefault();
+				if ($(this).text()='ocultar') {
+					$(this).prev().hide();
+					$(this).text('mostrar');
+				}else{
+					$(this).prev().show();
+					$(this).text('mostrar')
+				}
+				
+			});
+			$('body').on('clic', '#btntoggle1', function(event){
+				event.preventDefault();
+					$(this).prev().prev().toggle()
+				
+			});
+			$('body').on('clic', '#btn2', function(event){
+				event.preventDefault();
+				if ($(this).text()='ocultar') {
+					$(this).prev().hide();
+					$(this).text('mostrar');
+				}else{
+					$(this).prev().show();
+					$(this).text('mostrar')
+				}
+				
+			});
+			$('body').on('clic', '#btntoggle2', function(event){
+				event.preventDefault();
+					$(this).prev().prev().toggle()
+				
+			});
+		});
+	</script>
+</body>
+</html>

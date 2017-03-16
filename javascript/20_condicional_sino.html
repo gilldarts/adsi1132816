@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>condicional</title>
+</head>
+<body>
+	<h1>condicional sino</h1>
+	<hr>
+	<h2 id="bienvenido">bienvenido</h2>
+	
+	<script>
+		var bienvenido=document.getElementById('bienvenido');
+		var resp= prompt("¿necesita ayuda?");
+		if (resp=="si") {
+			bienvenido.innerHTML='!la ayuda va en camino¡';
+		}else{
+			bienvenido.innerHTML='fue un placer ayudarlo';
+		}
+	</script>
+</body>
+</html>

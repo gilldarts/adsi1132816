@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>operadores</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			padding: 4px
+			color: #777;
+			width: 800px;
+			font:16px Arial;
+			margin:100px auto;
+		}
+		table td, table th{
+			border: 1px dotted #ccc;
+			padding: 8px;
+		}
+		table th{
+			background-color: #999;
+			color: #fff;
+		}
+		table tr:nth-child(even){
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td colspan="4">operadores aritmeticos</td>
+			</tr>
+			<tr>
+				<th>operador</th>
+				<th>descripcion</th>
+				<th>ejemplo</th>
+				<th>resultado X</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>+</td>
+				<td>suma</td>
+				<td>x=y+2</td>
+				<td id="rsuma"></td>
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>resta</td>
+				<td>x=y-2</td>
+				<td id="rresta"></td>
+			</tr>
+			<tr>
+				<td>*</td>
+				<td>producto</td>
+				<td>x=y*2</td>
+				<td id="rproducto"></td>
+			</tr>
+			<tr>
+				<td>/</td>
+				<td>division</td>
+				<td>x=y/2</td>
+				<td id="rdivision"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">++</td>
+				<td rowspan="2">incremento</td>
+				<td>x=++y</td>
+				<td
+				 id="rincrementopre"></td>
+			</tr>
+			<tr>
+				<td>x=y++</td>
+				<td id="rincrementopost"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">--</td>
+				<td rowspan="2">decremento</td>
+				<td>x=--y</td>
+				<td
+				 id="rdecrementopre"></td>
+			</tr>
+			<tr>
+				<td>x=y--</td>
+				<td id="rdecrementopost"></td>
+			</tr>
+		</tbody>
+	</table>
+	<script>
+		var y=5;
+		var rsuma=document.getElementById('rsuma');
+		var rresta=document.getElementById('rresta');
+		var rproducto=document.getElementById('rproducto');
+		var rdivision=document.getElementById('rdivision');
+		var rincrementopre=document.getElementById('rincrementopre');
+		var rincrementopost=document.getElementById('rincrementopost');
+		var rdecrementopre=document.getElementById('rdecrementopre');
+		var rdecrementopost=document.getElementById('rdecrementopost');
+
+		rsuma.innerHTML=y+2;
+		rresta.innerHTML=y-2;
+		rproducto.innerHTML=y*2;
+		rdivision.innerHTML=y/2;
+		rincrementopre.innerHTML=++y;
+		y=5;
+		rincrementopost.innerHTML=y++;
+		y=5;
+		rdecrementopre.innerHTML=--y;
+		y=5;
+		rdecrementopost.innerHTML=y--;
+	</script>
+</body>
+</html>

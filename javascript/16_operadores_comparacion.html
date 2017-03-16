@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>operadores</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			padding: 4px
+			color: #777;
+			width: 800px;
+			font:16px Arial;
+			margin:100px auto;
+		}
+		table td, table th{
+			border: 1px dotted #ccc;
+			padding: 8px;
+		}
+		table th{
+			background-color: #999;
+			color: #fff;
+		}
+		table tr:nth-child(even){
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td colspan="4">operadores aritmeticos</td>
+			</tr>
+			<tr>
+				<th>operador</th>
+				<th>descripcion</th>
+				<th>comparacion</th>
+				<th>resultado</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>==</td>
+				<td>es igual a</td>
+				<td>x==8</td>
+				<td id="r1"></td>
+			</tr>
+			<tr>
+				<td>===</td>
+				<td>es exactamente igual a(valor y tipo)</td>
+				<td>x===5</td>
+				<td id="r2"></td>
+			</tr>
+			<tr>
+				<td>!=</td>
+				<td>no es igual</td>
+				<td>x!=8</td>
+				<td id="r3"></td>
+			</tr>
+			<tr>
+				<td>></td>
+				<td>es mayor que</td>
+				<td>x!==5</td>
+				<td id="r4"></td>
+			</tr>
+			<tr>
+				<td>!==</td>
+				<td>no es igual(valor y tipo)</td>
+				<td>x>8</td>
+				<td id="r5"></td>
+			</tr>
+			<tr>
+				<td><</td>
+				<td>es menor que</td>
+				<td>x<8</td>
+				<td
+				 id="r6"></td>
+			</tr>
+			<tr>
+				<td>>= </td>
+				<td>es mayor o igual que</td>
+				<td>x>=8</td>
+				<td id="r7"></td>
+			</tr>
+			<tr>
+				<td><=</td>
+				<td>es menor o igual que</td>
+				<td>x<=8</td>
+				<td id="r8"></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	<script>
+		var x=5;
+		var r1=document.getElementById('r1');
+		var r2=document.getElementById('r2');
+		var r3=document.getElementById('r3');
+		var r4=document.getElementById('r4');
+		var r5=document.getElementById('r5');
+		var r6=document.getElementById('r6');
+
+		r1.innerHTML=(x==8);
+		r2.innerHTML=(x===5);
+		r3.innerHTML=(x!=8);
+		r4.innerHTML=(x!==5);
+		r5.innerHTML=(x>8);
+		r6.innerHTML=(x<8);
+		r7.innerHTML=(x>=8);
+		r8.innerHTML=(x<=8);
+
+	</script>
+</body>
+</html>

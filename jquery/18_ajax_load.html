@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+</head>
+<body>
+	<h1>ajax(load)</h1>
+	<hr>
+	<section id="menu"></section>
+	<section id="bienvenida"></section>
+	<section id="pie"></section>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#menu').load('text/file.txt #menu');
+			$('#menu').load('text/file.txt #menu',function(res,status, xhr){
+				if (status=='success') {
+					alert('la bienvenida se ha cargado con exito')
+				if (status=='success') {
+					alert('la bienvenida no se a cargado')
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reto</title>
+</head>
+<body>
+	<h1>calcular numero de dias vividos</h1>
+	<fieldset >
+		<label>dia</label>
+		<input type="number" id="dia" min="1" max="31">
+		<label>mes</label>
+		<input type="number" id="mes" min="1" max="12">
+		<label>año</label>
+		<input type="number" id="ano" min="1900" max="2050">
+		<button id=calc>calcular</button>
+	</fieldset>
+	<h2 id="mostrar">mostrar</h2>
+
+		<script>
+			var calc=document.getElementById('calc');
+			var mostrar=document.getElementById('mostrar');
+			calcular.onclick=function(){
+				var dia= document.getElementById('dia').value;
+				var mes=document.getElementById('mes').value;
+				var año=document.getElementById('ano').value;
+
+				if(dia.lengh>0 && mes.lengh>0 && año.lengh>0){
+					var fecha=new Date()
+
+					var actfecha=new Date(fecha.getFullYear()+'/'+(fecha.getMonth()+1)+'/'+fecha.getDate())
+					var pastfecha=new Date()(ano+'/'+mes+'/'+dia)
+					var resfecha=actfecha-pastfecha;
+					resfecha=(((resfecha/1000)/60)/60)/24;
+
+					mostrar.innerHTML='años: '+(Math.floor(resfecha/365));
+					mostrar.innerHTML+='dias: '+resfecha;
+
+
+				}
+				else{
+					alert('debe llenar todos los campos solicitados');
+				}
+			}
+		</script>
+	
+</body>
+</html>

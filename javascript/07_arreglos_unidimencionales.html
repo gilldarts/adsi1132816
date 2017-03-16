@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arreglos</title>
+</head>
+<body>
+	<h1>arreglos</h1>
+	<hr>
+	<ul id="lista1"></ul>
+	<ul id="lista2"></ul>
+	<ul id="lista3"></ul>
+
+	<script>
+
+		var frutas=new Array();
+		frutas[0]='papaya';
+		frutas[1]='guanabana';
+		frutas[2]='chirimolla';
+		frutas[3]='borojo';
+
+		var deportes= new Array('futbol', 'baloncesto', 'tennis');
+
+		var ciudades = ['manizales', 'pereira', 'armenia'];
+
+		var l1=document.getElementById('lista1');
+		var l2=document.getElementById('lista2');
+		var l3=document.getElementById('lista3');
+
+		l1.innerHTML='<li>'+frutas[0]+'</li>';
+		l1.innerHTML+='<li>'+frutas[1]+'</li>';
+		l1.innerHTML+='<li>'+frutas[2]+'</li>';
+		l1.innerHTML+='<li>'+frutas[3]+'</li>';
+
+		l2.innerHTML='<li>'+deportes[0]+'</li>';
+		l2.innerHTML+='<li>'+deportes[1]+'</li>';
+		l2.innerHTML+='<li>'+deportes[2]+'</li>';
+
+		l3.innerHTML='<li>'+ciudades[0]+'</li><li>'+ciudades[1]+'</li><li>'+ciudades[2]+'</li>';
+
+
+	</script>
+
+</body>
+</html>

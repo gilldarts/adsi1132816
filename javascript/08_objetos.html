@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>objetos</title>
+</head>
+<body>
+	<h1>objetos</h1>
+	<hr>
+	<ul id="info"></ul>
+	<script>
+		var info= document.getElementById('info');
+		var pokemon={
+			nombre: 'pikachu',
+			tipo: 'electrico',
+			genero: 'masculino',
+			atacar: function(){
+				return 'trueno';
+			},
+			defender: function(){
+				return 'campo electrico';
+			},
+			evolucionar: function(){
+				this.nombre='raichu';
+			}
+		}
+		info.innerHTML="<li><strong>nombre: </strong>"+pokemon.nombre+"</li>";
+		info.innerHTML+="<li><strong>tipo: </strong>"+pokemon.tipo+"</li>";
+		info.innerHTML+="<li><strong>genero: </strong>"+pokemon.genero+"</li>";
+
+		info.innerHTML+="<li><strong>ataque: </strong>"+pokemon.atacar()+"</li>";
+		info.innerHTML+="<li><strong>defender: </strong>"+pokemon.defender()+"</li>";
+		pokemon.evolucionar();
+		info.innerHTML+="<li><strong>nuevo nombre: </strong>"+pokemon.nombre+"</li>";
+
+
+
+	</script>
+</body>
+</html>

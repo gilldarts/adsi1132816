@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculadora</title>
+</head>
+<body>
+	<style>
+		body {
+			font-family: sans-serif; 
+			text-align:center;
+		}
+		#cabecera{
+			font-size: 30px;
+			font-family: algerian;
+		}
+		#calculadora { 
+			font: bold 14px Arial,sans-serif; 
+			background-color: black;  
+			border-radius: 30px; 
+			height: 300; 
+			margin: 0 auto;
+		    padding: 50px 20px 30px 20px; 
+		    width: 400px;
+		}
+		.parteSuperior .pantalla { 
+			background-color: rgba(255, 255, 255,1); 
+			border-radius: 3px; 
+			color: black; 
+			float: right; 
+			font-size: 25px; 
+			height: 50px; 
+			letter-spacing: 1px; 
+			line-height: 40px; 
+			padding: 0 10px; 
+			text-align: right; 
+			width: 280px;
+		}
+		.teclas, .parteSuperior {
+			overflow: hidden; 
+		}
+		span{
+			font-size: 25px;
+		}
+		.teclas span, .parteSuperior span.borrar {
+		    background-color: #FFFFFF; 
+		    border-radius: 3px; 
+		    color: black; 
+		    cursor: pointer;
+		    float: left; 
+		    height: 50px; 
+		    line-height: 36px; 
+		    margin: 0 7px 11px 0; 
+		    text-align: center; 
+		    transition: all 0.4s ease 0s; 
+		    width: 93px;
+		}
+		.parteSuperior span.borrar { 
+			background-color:blue;
+		}
+		.teclas span.operador { 
+			background-color: green; 
+			margin-right: 0; 
+		}
+		.teclas span.igual { 
+			background-color: blue; 
+			color: black;
+		}
+		.parteSuperior span.borrar, { 
+			background-color: #FF9FA8; 
+			color: #FFFFFF; 
+		}
+		.teclas span:hover, .teclas span.igual:hover, .parteSuperior span.borrar:hover {
+		    background-color: #C20827; 
+		    color: #FFFFFF;
+		}
+
+	</style>
+<script>
+function pulsada (tecla) {
+	var listaPantalla = document.getElementsByClassName('pantalla');
+	var nodoPantalla = listaPantalla[0].firstChild;
+	switch(tecla) {
+	                case 'borrar':
+	                nodoPantalla.nodeValue = ' ';
+	                break;
+	                case '=':
+	                var resultado = eval(nodoPantalla.nodeValue);
+	                nodoPantalla.nodeValue = resultado;
+	                break;
+	                default:
+	                nodoPantalla.nodeValue = nodoPantalla.nodeValue + tecla;
+	                break;
+	}
+}
+</script>
+</head>
+<body>
+	<div id="cabecera"><h2>reto calculadora</h2></div>
+	<div id="calculadora">
+                <div class="parteSuperior">
+                               <span class="borrar" onclick="pulsada('borrar')">borrar</span>
+                               <div onclick="" class="pantalla"> </div>
+                </div>
+                <div class="teclas">
+                               <span onclick="pulsada('1')">1</span>
+                               <span onclick="pulsada('2')">2</span>
+                               <span onclick="pulsada('3')">3</span>
+                               <span class="operador" onclick="pulsada('+')">+</span>
+                               <span onclick="pulsada('4')">4</span>
+                               <span onclick="pulsada('5')">5</span>
+                               <span onclick="pulsada('6')">6</span>
+                               <span class="operador" onclick="pulsada('-')">-</span>
+                               <span onclick="pulsada('7')">7</span>
+                               <span onclick="pulsada('8')">8</span>
+                               <span onclick="pulsada('9')">9</span>
+                               <span class="operador" onclick="pulsada('*')">*</span>
+                               <span onclick="pulsada('0')">0</span>
+                               <span onclick="pulsada('.')">.</span>
+                               <span class="igual" onclick="pulsada('=')">=</span>
+                               <span class="operador" onclick="pulsada('/')">/</span>
+                </div>
+	</div>
+</body>
+</html>

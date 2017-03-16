@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>remover elementos</h1>
+	<hr>
+	<h2>lista de tareas</h2>
+	<ul id="tareas">
+		<li><button>&times;</button>ir al Sena</li>
+		<li><button>&times;</button>localizar el cic</li>
+		<li><button>&times;</button> ingresar a sistemas 1</li>
+		<li><button>&times;</button>decir buenos dias</li>
+		<li><button>&times;</button>buscar equipo de trabajo</li>
+		<li><button>&times;</button>abrir editor de texto</li>
+		<li><button>&times;</button>guardar trabajo</li>
+	</ul>
+	<button id="vaciar">eliminar todas las tareas</button>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('ul#tareas li button').click(function(event) {
+				%(this).parent().remove();
+
+			});
+			$('#vaciar').click(function(event) {
+				$('#tareas').empty();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>selectores jquery</h1>
+	<hr>
+	<table>
+		<body>
+			<tr class="primer">
+				<td>nombres1</td>
+				<td>telefonos1</td>
+				<td>direccion</td>
+			</tr>
+			<tr>
+				<td>nombres2</td>
+				<td>telefonos2</td>
+				<td>direccion</td>
+			</tr>
+			<tr>
+				<td>nombres3</td>
+				<td>telefonos3</td>
+				<td>direccion</td>
+			</tr>
+			<tr>
+				<td>nombres4</td>
+				<td>telefonos4</td>
+				<td>direccion</td>
+			</tr>
+			<tr>
+				<td>nombres5</td>
+				<td>telefonos5</td>
+				<td>direccion</td>
+			</tr>
+		</body>
+	</table>
+	<script src="js/query-3.1.1.js"</script>
+	<script>
+		$(document).ready(function(){
+			$('table tbody tr:even').css('background-color','red');
+			$('table tr'.click(function(){
+
+
+			$(this).css('background-color', 'green');
+		});
+	});
+	</script>
+
+</body>
+</html>
