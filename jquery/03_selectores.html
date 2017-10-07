@@ -2,51 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Selectores jQuery</title>
+	<style>
+		body {
+			font-family: Arial;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		table td {
+			padding: 10px;
+			border-bottom: 2px solid #333;
+		}
+	</style>
 </head>
 <body>
-	<h1>selectores jquery</h1>
+	<h1>Selectores jQuery</h1>
 	<hr>
+
 	<table>
-		<body>
+		<tbody>
 			<tr class="primer">
-				<td>nombres1</td>
-				<td>telefonos1</td>
-				<td>direccion</td>
+				<td>nombre1</td>
+				<td>telefono1</td>
+				<td>direccion1</td>
 			</tr>
 			<tr>
-				<td>nombres2</td>
-				<td>telefonos2</td>
-				<td>direccion</td>
+				<td>nombre2</td>
+				<td>telefono2</td>
+				<td>direccion2</td>
 			</tr>
 			<tr>
-				<td>nombres3</td>
-				<td>telefonos3</td>
-				<td>direccion</td>
+				<td>nombre3</td>
+				<td>telefono3</td>
+				<td>direccion3</td>
 			</tr>
 			<tr>
-				<td>nombres4</td>
-				<td>telefonos4</td>
-				<td>direccion</td>
+				<td>nombre4</td>
+				<td>telefono4</td>
+				<td>direccion4</td>
 			</tr>
 			<tr>
-				<td>nombres5</td>
-				<td>telefonos5</td>
-				<td>direccion</td>
+				<td>nombre5</td>
+				<td>telefono5</td>
+				<td>direccion5</td>
 			</tr>
-		</body>
+		</tbody>
 	</table>
-	<script src="js/query-3.1.1.js"</script>
+
+	<script src="js/jquery-3.1.1.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('table tbody tr:even').css('background-color','red');
-			$('table tr'.click(function(){
-
-
-			$(this).css('background-color', 'green');
+		$(document).ready(function() {
+			// Selector :even
+			$('table tbody tr:even').css('background-color', '#ff2178');
+			// .clase
+			$('.primer').css('background-color', '#7e5cec');
+			// etiqueta
+			$('table tr').click(function() {
+				// this
+				$(this).css('background-color', '#71d4a2');
+			});
 		});
-	});
 	</script>
-
+	
 </body>
 </html>
